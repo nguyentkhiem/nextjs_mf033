@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  frontend:
+    image: registry.miichisoft.net/mutes/mf033_fe/develop:${IMAGE_TAG}
+    container_name: mf033_fe
+    restart: always
+    ports:
+      - "3002:80"
